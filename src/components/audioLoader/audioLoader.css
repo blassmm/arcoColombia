@@ -1,0 +1,324 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0rem;
+  left: 2rem;
+  cursor: pointer;
+  width: 11rem;
+  height: 8rem;
+  z-index: 999999 ;
+  transition: all 1s ease;
+}
+
+.loader:hover{
+  filter: drop-shadow( 0 0 1px rgba(218, 240, 255, 0.774));
+  transition: all 1s ease;
+}
+
+/* desactive */
+
+#bar_line{
+  bottom: 4rem;
+  left: 8.5rem;
+  bottom: 11.2rem;
+  position: absolute;
+  scale: 1.2;
+  filter: contrast(120%) brightness(110%);
+}
+
+.bar_out{
+  height: 8px;
+  position: absolute;
+  width: 2px;    
+  animation: sound 0ms -800ms linear infinite alternate;
+}
+
+
+
+/* active */
+
+#bars {
+  position: absolute;
+  filter: drop-shadow( 0 0 2px black);
+  scale: 1.2;
+  filter: contrast(140%) brightness(110%);
+  left: 8.5rem;
+  bottom: 10.1rem;
+}
+
+.bars {
+  background: #666;
+  bottom: 1px;
+  height: 3px;
+  position: absolute;
+  width: 2px;      
+  animation: sound 0ms -800ms linear infinite alternate;
+}
+
+
+
+@keyframes sound {
+  0% {
+     opacity: .35;
+      height: 3px; 
+  }
+  100% {
+      opacity: 1;       
+      height: 28px;        
+  }
+}
+
+.bars:nth-child(1)  { left: 1px; animation-duration: 474ms;  background: rgb(112, 162, 255);}
+.bars:nth-child(2)  { left: 5px; animation-duration: 433ms;  background: rgb(241, 241, 241);}
+.bars:nth-child(3)  { left: 9px; animation-duration: 407ms;  background: rgb(112, 162, 255); }
+.bars:nth-child(4)  { left: 13px; animation-duration: 458ms; background: rgb(241, 241, 241);}
+.bars:nth-child(5)  { left: 17px; animation-duration: 400ms; background: rgb(112, 162, 255);}
+.bars:nth-child(6)  { left: 21px; animation-duration: 427ms; background: rgb(241, 241, 241);}
+.bars:nth-child(7)  { left: 25px; animation-duration: 441ms; background: rgb(112, 162, 255);}
+.bars:nth-child(8)  { left: 29px; animation-duration: 419ms; background: rgb(241, 241, 241);}
+.bars:nth-child(9)  { left: 33px; animation-duration: 487ms; background: rgb(112, 162, 255);}
+.bars:nth-child(10) { left: 37px; animation-duration: 442ms; background: rgb(241, 241, 241);}
+.bars:nth-child(11) { left: 40px; animation-duration: 492ms; background: rgb(112, 162, 255);}
+
+
+.bar_out:nth-child(1)  { left: 1px;  background: rgb(112, 162, 255);}
+.bar_out:nth-child(2)  { left: 5px;  background: rgb(241, 241, 241);}
+.bar_out:nth-child(3)  { left: 9px;  background: rgb(112, 162, 255); }
+.bar_out:nth-child(4)  { left: 13px; background: rgb(241, 241, 241);}
+.bar_out:nth-child(5)  { left: 17px; background: rgb(112, 162, 255);}
+.bar_out:nth-child(6)  { left: 21px; background: rgb(241, 241, 241);}
+.bar_out:nth-child(7)  { left: 25px; background: rgb(112, 162, 255);}
+.bar_out:nth-child(8)  { left: 29px; background: rgb(241, 241, 241);}
+.bar_out:nth-child(9)  { left: 33px; background: rgb(112, 162, 255);}
+.bar_out:nth-child(10) { left: 37px; background: rgb(241, 241, 241);}
+.bar_out:nth-child(11) { left: 40px; background: rgb(112, 162, 255);}
+
+
+/* Click  */
+
+.clickRipple {
+  position: fixed;
+  border-style: solid;
+  border-radius: 50%;
+  z-index: 999999999 !important;
+  animation: ripple 0.25s ease-out;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes ripple {
+  from{
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+    border-width: 5px;
+    margin-left: -8px;
+    margin-top: -8px;
+    
+  }
+  
+  to{
+    opacity: 0.35;
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+}
+
+/* CIRCLE */
+
+.loaderBox{
+  position: absolute;
+  width: 100%;
+  bottom: 0rem;
+}
+
+.circleBlur{
+  border-radius: 120%;
+  width: 15.5rem;
+  height: 15.5rem;
+  position: absolute;
+  z-index: -1;
+  left: 3.4rem;
+  bottom: 3.4rem;
+  background-color: rgba(12, 12, 12, 0.959);
+  backdrop-filter: blur(12px);
+  transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.circle{
+  width: 22rem;
+  left: 0rem;
+}
+
+
+.circle:hover .textcircle {
+  transform: scale(1.2) rotate(90deg);
+}
+
+.loaderBox:hover .circleBlur{
+  transform: scale(1.2) rotate(90deg);
+  transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.textcircle {
+  transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+  transform-origin: 250px 250px;
+}
+
+.textCircle {
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-variant-ligatures: none;
+  fill: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  animation: rotate 25s linear infinite;
+  transform-origin: 250px 250px;
+  filter: drop-shadow( 0 0 10px rgb(0, 0, 0));
+}
+
+.minCirc{
+  background-color: yellow;
+  color: yellow;
+  background-color: yellow;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid red;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .loaderBox{
+    width: 17rem;
+    bottom: -2rem;
+  }
+
+  .circleBlur{
+    width: 14rem;
+    height: 14rem;
+    z-index: -1;
+    left: 3.1rem;
+    bottom: 3.2rem;
+  }
+  
+  .circle{
+    width: 20rem;
+    left: 0rem;
+  }
+  
+  
+  /* desactive */
+
+  #bar_line{
+    bottom: 4rem;
+    left: 7.5rem;
+    bottom: 10.4rem;
+    scale: 1.2;
+  }
+
+  .bar_out{
+    height: 8px;
+    width: 2px;    
+  }
+
+    /* active */
+
+  #bars {
+    scale: 1.2;
+    left: 7.5rem;
+    bottom: 9.1rem;
+  }
+
+  .bars {
+    bottom: 1px;
+    height: 3px;
+    width: 2px;      
+  }
+
+  .circle:hover .textcircle {
+    transform: scale(1.12) rotate(90deg);
+  }
+  
+  .loaderBox:hover .circleBlur{
+    transform: scale(1.12) rotate(90deg);
+  }
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  .circleBlur{
+    background-color: rgba(12, 12, 12, 0.959);
+    backdrop-filter: blur(12px);
+  }
+
+  .loaderBox{
+    width: 17rem;
+    bottom: 0rem;
+  }
+
+  .circle:hover .textcircle {
+    transform:none;
+  }
+
+  .loaderBox:hover .circleBlur{
+    transform:none;
+  }
+
+  .loader:hover{
+    filter: none;
+  }
+  
+}
+
+
+@media (max-height: 700px) {
+
+  .circle {
+      width: 17rem;
+  }
+  .circleBlur {
+      width: 11.9rem;
+      height: 11.9rem;
+      z-index: -1;
+      left: 2.6rem;
+      bottom: 2.75rem;
+      backdrop-filter: blur(7px);
+      border-radius: 120%;
+  }
+
+  #bar_line {
+      left: 6.2rem;
+      bottom: 9rem;
+      scale: 1.1;
+  }
+
+  #bars {
+    left: 6.2rem;
+    bottom: 8rem;
+    scale: 1.1;
+  }
+  
+  .bars {
+    background: #0f0c0c;
+    bottom: 1px;
+    height: 3px;
+    position: absolute;
+    width: 2px;      
+    animation: sound 0ms -800ms linear infinite alternate;
+  }
+  
+  
+}

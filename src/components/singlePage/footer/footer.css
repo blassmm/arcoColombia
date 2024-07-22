@@ -1,0 +1,388 @@
+.footer {
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 4rem;
+  padding-top: 6rem;
+  gap: 3rem;
+  z-index: 9999999 !important;
+}
+
+.box_contains_footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+/* list footer */
+
+.box_list_footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title_footer p {
+  color: white;
+  list-style: none;
+  font-size: 2.7rem;
+  font-family: "Mongoose-bold";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  position: relative;
+}
+
+.list_Footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  position: relative;
+}
+
+.list_Footer li a,
+.list_contact li {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: "montserrat";
+  color: white;
+}
+
+.list_Footer a {
+  text-decoration: none;
+}
+
+/* container contact */
+
+.list_contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list_contact p {
+  color: white;
+  font-size: 2.7rem;
+  line-height: 2.5rem;
+  font-family: "Mongoose-bold";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.list_contact ul {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list_contact li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: -0.3rem;
+}
+
+.icon_footer {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  border-radius: 100%;
+  border: 1px solid rgb(82, 82, 82);
+  padding: 0.5rem;
+  filter: sepia(100%);
+}
+
+/* box email */
+
+.box_email {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30rem;
+  position: relative;
+}
+
+.suscTitle {
+  color: white;
+  font-size: 2.7rem;
+  line-height: 2.5rem;
+  font-family: "Mongoose-bold";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.box_email form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.box_email input {
+  padding: 0 1rem;
+  width: 80%;
+  height: 3rem;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  font-family: "shentox-bold";
+  font-size: 1.3rem;
+  background-color: #f3f3f3;
+}
+
+.box_email button {
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #fcfeff 0,
+    #ffde83 100%
+  );
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  color: rgb(27, 27, 27);
+  cursor: pointer;
+  overflow: hidden;
+  padding: 1rem;
+  font-family: "Mongoose-bold";
+  text-transform: uppercase;
+  position: relative;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  letter-spacing: 0.9px;
+  font-size: 1.9rem;
+  margin-right: 15rem;
+}
+
+.box_email button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #fbfbff77 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.box_email button:active {
+  box-shadow: #ffe498 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.msjUser_email_succ {
+  color: rgb(0, 248, 103);
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-family: "Mongoose-bold";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.msjUser_email_denn {
+  color: rgb(255, 73, 49);
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-family: "Mongoose-bold";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+/* box copy */
+
+.box_copyRight {
+  position: relative;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hr_footer {
+  width: 65%;
+  border-color: rgb(39, 39, 39);
+  border-width: 0.2rem;
+  border-left: none;
+  border-right: none;
+}
+
+.copyright {
+  font-size: 2rem;
+  color: rgb(194, 194, 194);
+  font-family: "Mongoose-bold";
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.boxTrust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 20rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.boxTrust p {
+  font-size: 1.2rem;
+  color: rgb(223, 223, 223);
+  font-family: "Mongoose-bold";
+  letter-spacing: 1px;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .box_contains_footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 98%;
+    padding: 2rem 1rem;
+    gap: 5rem;
+  }
+  .copyright {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .box_email {
+    width: 20rem;
+  }
+  .list_contact li,
+  .list_Footer li {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .box_email input {
+    padding: 0 1rem;
+    width: 90%;
+    height: 3rem;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    font-family: "montserrat-bold";
+    font-size: 1.1rem;
+    background-color: #fdfdfd;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .box_contains_footer {
+    flex-direction: column;
+    width: 98%;
+    padding: 2rem;
+  }
+
+  .list_Footer {
+    color: white;
+    gap: 1.5rem;
+  }
+
+  .list_Footer li,
+  .list_contact li {
+    font-size: 1.6rem;
+  }
+
+  .box_email input {
+    padding: 0 1rem;
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+
+  .box_email {
+    width: 28rem;
+  }
+  .copyright {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 607px) {
+  .hr_footer {
+    width: 40rem;
+  }
+
+  .footer {
+    padding: 4rem 2rem;
+  }
+  .copyright {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .hr_footer {
+    width: 25rem;
+  }
+
+  .box_email {
+    width: 20rem;
+  }
+
+  .footer {
+    padding: 4rem 1rem;
+  }
+
+  .copyright {
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+
+  .box_contains_footer {
+    width: 98%;
+    padding: 2rem 3rem;
+    gap: 5rem;
+  }
+
+  .list_Footer li,
+  .list_contact li {
+    font-size: 1.2rem;
+  }
+
+  .box_email input {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .list_Footer li,
+  .list_contact li {
+    font-size: 1.1rem;
+  }
+}

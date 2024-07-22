@@ -1,0 +1,383 @@
+a{
+    text-decoration: none;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    height: 7rem;
+    z-index: 99999991 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    transition: all 1s ease-in-out;
+}
+
+
+.nav_active{
+    backdrop-filter: blur(10px);
+    background-color: rgba(8, 8, 8, 0.959);
+    transition: all 1s ease-in-out;
+}
+
+
+.listEffectNav{
+    transition: opacity 3s ease-in;
+}
+
+
+
+/* nav hambur */
+
+.nav_active_mobile{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 99999991 !important;
+    display: flex;
+    justify-content: center;
+    transition: all 255ms ease;
+}
+
+.circle_nav {
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    top: -4.5rem;
+    right: -2rem;
+    z-index: -1;
+    border-radius: 100%;
+    background: rgb(3, 163, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+.circle_nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent url("../assets/src/backgrounds/noise.webp") repeat 0 0;
+    background-repeat: repeat;
+    opacity: .6;
+    border-radius: 100%;
+    animation: _noiseAnim_judif_1 .2s infinite;
+    width: 100%;
+    height: 100%;
+    scale: 1 !important;
+  }
+  
+
+.titleNav_mobile{
+    font-size: 3.7rem;
+    font-family: bulevar;
+    outline: none;
+    text-transform: uppercase;
+    position: absolute;
+    font-family: "Mongoose-bold";
+    letter-spacing: 3px;
+    left: 10rem;
+    top: 1.2rem;
+    transition: all 1.5s ease;
+}
+
+.titleNav_mobile-active{
+    color: rgb(255, 255, 255);
+    top:1.2rem;
+    font-weight: bold;
+    z-index: 1100;
+    font-size: 3.7rem;
+    outline: none;
+    text-transform: uppercase;
+    position: absolute;
+    font-family: "Mongoose-bold";
+    letter-spacing: 3px;
+    left: 10rem;
+    transition: all 1.5s ease;
+}
+
+
+.toggle, .toggle_active{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    right: 3rem;
+    top: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: .8rem;
+    transition: all .3s ease;
+    cursor: pointer;
+    z-index: 999999 !important;
+    padding: .4rem;
+}
+
+.toggle:hover{
+    scale: 1.2;
+    transition: all .4s ease;
+}
+
+.toggle_active{
+    top: 2rem;
+    right: 3rem;
+    padding: 0;
+}
+
+
+.toggle_active::after{
+    content: "";
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    top: 52%;
+    left: 52%;
+    transform: translate(-50% , -50%);
+    border: 3px solid rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    background-color: #fffefe11;
+}
+
+.toggle_active:hover{
+    scale: 1.1;
+    transition: all .4s ease;
+}
+
+/* line desactive */
+
+.line{
+    width: 70%;
+    height: .3rem;
+    background: rgb(255, 255, 255);
+    transition: all .3s ease;
+}
+
+
+.line1{
+    width: 55%;
+}
+
+.line2{
+    width: 85%;
+}
+
+.line3{
+    width: 120%;
+}
+
+
+
+/* active toggle */
+.lineActive{
+    width: 70%;
+    height: .3rem;
+    background: rgb(255, 251, 0) ;
+    transition: all .3s ease;
+}
+
+
+.line1_active{
+    position: relative;
+    transform: rotate(45deg) translateY(.8rem);
+    top: .7rem;
+    transition: all .3s ease;
+}
+
+.line2_active{
+    position: relative;
+    transform: rotate(-45deg) translateY(-.9rem);
+    top: .7rem;
+    transition: all .3s ease;
+}
+
+.line3_active{
+    opacity: 0;
+    background-color: rgb(255, 254, 254);
+    transition: all .1s ease;
+}
+
+
+.list_nav_diss{
+    display: none;
+}
+
+
+.list_nav_mobile{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    position: fixed;
+    top: 52%;
+    left: 0;
+    transform: translate(0 , -50%);
+}
+
+
+
+.list_link_nav{
+    position: relative;
+    font-weight: bold;
+    font-size: 10rem;
+    color: rgb(255, 255, 255);
+    font-family: bulevar;
+    outline: none;
+    text-transform: uppercase;
+    font-family: "Mongoose-bold";
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    width: 100%;
+    height: 15rem;
+    transition: all .5s ease;
+
+}
+
+
+.list_link_nav:hover{
+    text-shadow:  0 0 5px rgba(141, 141, 141, 0.377);
+    background-color: rgba(255, 254, 254, 0.336);
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+
+.list_mobile{
+    position: absolute;
+    top:.5rem !important;
+    opacity: 1;
+    width: 100%;
+    padding: 1rem 0;
+    padding-left: 9rem;
+}
+
+@media screen and (max-width:1440px ){
+    .list_link_nav{
+        font-size: 7rem;
+        letter-spacing: 2.4px;
+        height: 11rem;
+    }
+
+    .list_nav_mobile {
+        gap: .4rem;
+    }
+}
+
+@media screen and (max-width:950px) {
+
+    .titleNav_mobile{
+        left: 5rem;
+    }
+
+    .titleNav_mobile-active {
+        left: 5rem;
+    }
+
+    .list_mobile {
+        top: 0.5rem;
+        padding: 1rem 0;
+        padding-left: 5rem;
+    }
+    .titleNav_mobile-active {
+        left: 5rem;
+        top: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .nav{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .list_mobile {
+        top: 0.5rem;
+        padding: 1rem 0;
+        padding-left: 3rem;
+    }
+
+    .list_link_nav{
+        font-size: 6rem;
+        letter-spacing: 2.4px;
+        height: 10rem;
+    }
+    
+    .list_nav_mobile {
+        gap: 3rem;
+    }
+
+    .toggle_active::after{
+        width: 5.5rem;
+        height: 5.5rem;
+        top: 52%;
+        left: 52%;
+        border: 3px solid rgb(255, 255, 255);
+    }
+    
+    .toggle_active:hover{
+        scale: 1.1;
+    }
+    .line{
+        margin-right: -.5rem;
+    }
+
+    .line1{
+        width: 45%;
+    }
+    
+    .line2{
+        width: 75%;
+    }
+    
+    .line3{
+        width: 100%;
+    }
+
+ 
+    
+    .circle_nav {
+        width: 13rem;
+        height: 13rem;
+        right: -2.5rem;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+ 
+    .list_link_nav{
+        font-size: 5rem;
+        letter-spacing: 2.4px;
+        height: 9rem;
+    }
+
+    .list_mobile {
+        top: 0.5rem;
+        padding: 1rem 0;
+        padding-left: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width:350px) {
+ 
+    .list_link_nav{
+        font-size: 4rem;
+        letter-spacing: 2.4px;
+        height: 8rem;
+    }
+
+    .list_nav_mobile {
+        gap: 2rem;
+    }
+}

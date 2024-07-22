@@ -1,0 +1,92 @@
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 99999999999 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+
+.line_preload{
+    position: relative;
+    width: 30rem;
+    height: 100vh;
+    background-color: rgb(3, 163, 255);
+    background-image: url("../assets/src/backgrounds/arcoRepeat.webp");
+    background-repeat: repeat;
+    background-size: contain;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+}
+
+
+
+
+@keyframes rotateLogo {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+
+    }
+}
+
+
+
+@media screen and (max-width:1700px) {
+    .preloader img{
+        width: 27rem;
+    }
+
+    .line_preload-2 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:1440px) {
+    .preloader img{
+        width: 27rem;
+    }
+
+    .line_preload-1 , .line_preload-3{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:900px) {
+    .preloader img{
+        width: 27rem;
+    }
+
+    .line_preload-4 , .line_preload-5 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .preloader img{
+        width: 22rem;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .preloader img{
+        width: 22rem;
+    }
+}
+
+

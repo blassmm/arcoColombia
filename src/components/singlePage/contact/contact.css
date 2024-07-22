@@ -1,0 +1,336 @@
+.contact {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99999;
+}
+
+.container_contact {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rem 0;
+  gap: 10rem;
+}
+
+.contactTitle {
+  font-size: 10rem;
+  font-family: "Mongoose-bold";
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 10rem;
+  top: 6rem;
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  z-index: 300;
+}
+
+.line_title_contact {
+  width: 0%;
+  height: 13rem;
+  position: absolute;
+  top: 15rem;
+  z-index: 200;
+  background-color: rgb(6, 3, 10);
+  transform: skew(-10deg) !important;
+  border-radius: 5px;
+}
+
+/* box contact */
+
+.box_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.box_contact hr {
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 2.5rem;
+  border: none;
+  border-radius: 40px;
+  height: 0.5rem;
+  width: 100%;
+}
+
+.cont {
+  display: flex;
+  gap: 4rem;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.iconContac img {
+  object-fit: contain;
+  width: 7rem;
+  height: 7rem;
+  filter: invert() drop-shadow(0 0 5px rgba(255, 255, 255, 0.555));
+  transition: all 1s ease;
+}
+
+.iconContac:hover {
+  scale: 1.1;
+  transition: all 1s ease;
+}
+
+.boxiconInstagram {
+  width: 6rem;
+  height: 6rem;
+  background: #1e1c0c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 9rem;
+  transition: all 1s ease;
+}
+
+.boxiconInstagram:hover {
+  scale: 1.1;
+  filter: drop-shadow(0 0 10px white);
+  transition: all 1s ease;
+}
+
+.boxiconInstagram img {
+  width: 2rem;
+  filter: brightness(0) invert();
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.boxTitleContact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 42rem;
+}
+
+.boxTitleContact h2 {
+  font-size: 5rem;
+  font-family: "Mongoose-bold";
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  opacity: 1;
+  color: #1e1c0c;
+  left: 4rem;
+}
+
+.boxTitleContact p {
+  font-size: 2rem;
+  font-family: "Montserrat-bold";
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  opacity: 1;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  left: 4rem;
+}
+
+/* map */
+
+.map {
+  width: 90rem;
+  height: 43rem;
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 0 10px rgba(194, 193, 193, 0.363));
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border: 8px ridge rgb(37, 37, 37);
+  border-radius: 10px;
+  filter: drop-shadow(0 0 5px rgba(255, 244, 141, 0.788));
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* .............................. */
+
+@media screen and (max-width: 1440px) {
+  .boxTitleContact h2 {
+    font-size: 4.5rem;
+    letter-spacing: 2.6px;
+  }
+
+  .boxTitleContact p {
+    font-size: 1.8rem;
+    letter-spacing: 1.6px;
+  }
+
+  .map {
+    width: 75rem;
+    height: 40rem;
+  }
+
+  .boxiconInstagram {
+    left: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .map {
+    width: 60rem;
+    height: 35rem;
+  }
+
+  .boxiconInstagram {
+    left: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .map {
+    width: 90%;
+    height: 35rem;
+  }
+
+  .box_contact {
+    width: 90%;
+  }
+
+  .line_title_contact {
+    width: 90% !important;
+    margin-top: 2rem;
+    background-color: black;
+  }
+
+  .container_contact {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .contact {
+    margin-top: -18rem;
+  }
+
+  .contactTitle {
+    font-size: 8rem;
+    margin-bottom: 12rem;
+    top: 7rem;
+  }
+
+  .boxTitleContact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30rem;
+  }
+
+  .boxTitleContact h2 {
+    font-size: 3.7rem;
+    letter-spacing: 2.3px;
+    left: 0;
+  }
+
+  .boxTitleContact p {
+    font-size: 1.5rem;
+    letter-spacing: 1.3px;
+    left: 0;
+  }
+
+  .boxiconInstagram {
+    left: 2rem;
+  }
+
+  .iconContac img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .map {
+    width: 95%;
+    height: 23rem;
+    filter: drop-shadow(0 0 5px rgb(194, 193, 193));
+  }
+
+  .map iframe {
+    border: 5px ridge rgb(37, 37, 37);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .boxTitleContact {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .boxTitleContact {
+    width: 25rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boxiconInstagram {
+    left: 0rem;
+  }
+}
+
+@media screen and (max-width: 357px) {
+  .boxTitleContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .boxTitleContact h2 {
+    font-size: 4rem;
+    letter-spacing: 2.3px;
+  }
+
+  .boxTitleContact p {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .boxTitleContact {
+    width: 20rem;
+  }
+
+  .cont {
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contactTitle {
+    font-size: 6rem;
+    top: 8rem;
+  }
+}
